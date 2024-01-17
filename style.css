@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('src/fuentes/Roboto/Roboto-Regular.ttf') format('truetype');
+    /* Puedes agregar formatos adicionales según el tipo de fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSans';
+    src: url('src/fuentes/Noto_Sans/static/NotoSans-Bold.ttf') format('truetype');
+    /* Puedes agregar formatos adicionales según el tipo de fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+/* esto elimina las flechas de incremento para el input de numero */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: rgb(46, 46, 46);
+    font-family: 'NotoSans';
+    flex-direction: column;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: #fff;
+    padding: 10px;
+}
+#contenedorAll{
+    flex: 1;
+    text-align: center;
+    justify-content: center; /* Espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    background-color:#293745;
+    color: #fff;
+    display: flex;
+    /*align-items: flex-start; */
+}
+main{
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    width: 80%;
+}
+.titulo1{ 
+    color: #fff;
+    font-weight: 900; /* Cambiado a 900 para enfatizar más el grosor */
+    font-size: 2.5em; /* Ajusta el tamaño según tus necesidades */
+    font-style: normal;
+}
+.titulo2, .titulo3{ 
+    font-weight: 900; /* Cambiado a 900 para enfatizar más el grosor */
+    font-size: 1.5em; /* Ajusta el tamaño según tus necesidades */
+}
+.italic{
+    font-style: italic;
+}
+.autorizo{
+    color: #4CAF50;
+}
+.checkBox {
+    display: inline-block;
+    width: 25px; /* Tamaño del checkbox (puedes ajustar según sea necesario) */
+    height: 25px; /* Tamaño del checkbox (puedes ajustar según sea necesario) */
+    background-color: #fff; /* Fondo del checkbox (puedes ajustar según sea necesario) */
+    border: 1px solid #4CAF50; /* Borde del checkbox */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox para indicar interactividad */
+}
+.form-section {
+    text-align: left;
+    font-size: 1.3em;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 50px;
+}
+.form-section>h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+form>input{
+    text-align: right;
+}
+.horizont, .botones{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.horizont label {
+    flex: 1;
+    margin-right: 10px; /* Ajusta el espacio entre el label y el input según tus preferencias */
+    flex: 1;
+    margin-right: 10px; /* Ajusta el espacio entre el label y el input según tus preferencias */
+}
+.horizont input {
+    flex: 1;
+    width: 50%; /* Ocupa la mitad del ancho disponible */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 4px solid #fbd762;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Efecto de transición en el color del borde */
+    
+    /* Nuevos estilos para el input */
+    font-size: 16px; /* Ajusta el tamaño de la letra según tus preferencias */
+    font-weight: bold; /* Hace que el texto sea bold */
+    font-family: 'Roboto';
+    margin-right: 10px;
+}
+.horizont2{        
+    display: flex; /* Utiliza el modelo de diseño flexbox */
+    flex-direction: row; /* Establece la dirección de los elementos a horizontal */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;
+}
+.horizont input,
+.horizont select {
+    flex: 2; /* Hace que el input y el select ocupen más espacio que el label */
+    min-width: 200px; /* Establece un ancho mínimo para evitar que se encojan demasiado */
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select{
+    width: 50.5%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 4px solid #fbd762;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Efecto de transición en el color del borde */
+    
+    /* Nuevos estilos para el input */
+    font-size: 16px; /* Ajusta el tamaño de la letra según tus preferencias */
+    font-weight: bold; /* Hace que el texto sea bold */
+    font-family: 'Roboto';
+}
+
+input[type="date"] {
+    width: calc(100% - 22px); /* Ajusta para compensar el padding y border */
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%; /* Ocupa todo el ancho disponible */
+    align-self: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.botones{
+    justify-content: center; 
+}
+.botones button {
+    margin: 0 20px; /* Ajusta el espacio horizontal entre los botones según tus preferencias */
+}
+button{
+    width: 20em;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    align-self: center;
+}
+button:hover{
+    background-color: aquamarine;
+    color: #293745;
+}
+.horizont input.filled, .horizont select.filled {
+    border-color: #4CAF50; /* Cambia el color del borde cuando el input contiene información */
+    border: 3px solid #4CAF50;
+    background-color:#293745;
+    color: #fff;
+}
+.textoHorizontal{
+    margin-left: 10em;
+    white-space: nowrap;
+}
+th{
+    color: #293745;
+}
+/* foto de perfil */
+#imagenPerfil {
+    max-width: 250px;
+    max-height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+.foto{
+    flex: 1;
+}
+.datoscalculados{
+    text-align: right;
+}
+
+/* estilo table */ 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
